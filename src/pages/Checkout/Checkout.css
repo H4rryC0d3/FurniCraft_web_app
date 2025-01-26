@@ -1,0 +1,181 @@
+/* src/pages/Checkout/Checkout.css */
+
+.checkout-container {
+  padding: 40px;
+  background-color: #f9f9f9;
+  font-family: Arial, sans-serif;
+}
+
+.checkout-container h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.checkout-content {
+  display: flex;
+  gap: 40px;
+  justify-content: space-between;
+}
+
+.product-summary {
+  width: 40%;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-summary h2, .billing-info h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.product-summary .product-details {
+  display: flex;
+  gap: 20px;
+}
+
+.product-summary .product-details img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.product-summary .order-summary {
+  margin-top: 20px;
+}
+
+.billing-info {
+  width: 55%;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.billing-info form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-group label {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.form-group input, .form-group textarea, .payment-method select {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.submit-button {
+  background-color: #fca120;
+  border: none;
+  padding: 15px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+  background-color: #e5891b;
+}
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .checkout-content {
+    gap: 20px;
+  }
+
+  .product-summary, .billing-info {
+    width: 100%; 
+  }
+}
+
+@media (max-width: 768px) {
+  .checkout-container {
+    padding: 20px;
+  }
+
+  .checkout-container h1 {
+    font-size: 28px;
+  }
+
+  .product-summary,
+  .billing-info {
+    padding: 15px;
+  }
+
+  .submit-button {
+    padding: 12px;
+    font-size: 16px;
+  }
+
+  .product-summary .product-details img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .product-summary h2, .billing-info h2 {
+    font-size: 24px;
+  }
+
+  .form-group label {
+    font-size: 14px;
+  }
+
+  .form-group input,
+  .form-group textarea,
+  .payment-method select {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .checkout-container {
+    padding: 10px;
+  }
+
+  .checkout-container h1 {
+    font-size: 24px;
+  }
+
+  .checkout-content {
+    flex-direction: column;
+  }
+
+  .product-summary, .billing-info {
+    width: 100%; 
+    margin-bottom: 20px;
+  }
+
+  .submit-button {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .product-summary .product-details img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .product-summary h2, .billing-info h2 {
+    font-size: 20px;
+  }
+
+  .form-group label {
+    font-size: 12px;
+  }
+
+  .form-group input,
+  .form-group textarea,
+  .payment-method select {
+    font-size: 12px;
+  }
+}

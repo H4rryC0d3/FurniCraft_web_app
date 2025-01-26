@@ -1,0 +1,132 @@
+/* Navbar container */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  color: black;
+}
+
+.nav_logo h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  text-decoration: none;
+}
+
+/* For desktop, display the menu horizontally */
+.link ul {
+  display: flex; 
+  list-style: none;
+  gap: 2rem; 
+}
+
+
+
+.link.mobile-menu ul {
+  display: flex; 
+}
+
+.link ul li {
+  font-size: 18px;
+  font-weight: 600;
+  color: #2b1e0d;
+}
+
+.link ul li:hover {
+  color: gold;
+  cursor: pointer;
+}
+
+.link ul li a {
+  text-decoration: none;
+  color: inherit; 
+}
+
+.link ul li a:hover {
+  color: gold;
+}
+
+.nav_icon {
+  display: flex;
+  gap: 15px;
+}
+
+.nav_icon .icon {
+  font-size: 26px;
+  color: #333; 
+  transition: color 0.3s ease;
+}
+
+/* Navbar fixed on scroll */
+.navbar.active {
+  padding: 0.5rem;
+  position: fixed;
+  top: 0;
+  z-index: 1200;
+  width: 95%;
+  background-color: #fca120;
+  box-shadow: -1px 11px 24px -11px rgba(0, 0, 0, 0.75);
+  transition: 0.5s;
+}
+
+/* Mobile view (below 768px) */
+@media (max-width: 768px) {
+  .link ul {
+    display: none; 
+    flex-direction: column;
+    gap: 1rem;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: #fca120;
+    width: 90%;
+    padding: 1rem;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  }
+
+  .link.mobile-menu ul {
+    display: flex; 
+  }
+
+  .menu-toggle {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+  }
+
+  .menu-toggle .bar {
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    border-radius: 2px;
+  }
+
+  .nav_icon {
+    gap: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .link ul {
+    display: none; 
+    flex-direction: column;
+    gap: 1rem;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: #fca120;
+    width: 90%;
+    padding: 1rem;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1100; 
+  }
+  .nav_logo h2 {
+    font-size: 1.2rem;
+  }
+
+  .nav_icon .icon {
+    font-size: 22px;
+  }
+}

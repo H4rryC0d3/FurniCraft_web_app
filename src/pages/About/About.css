@@ -1,0 +1,67 @@
+/* src/pages/About/About.css */
+.about-page {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.about-page h1,
+.about-page h2 {
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 32px;
+}
+
+.about-page p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.about-page strong {
+  color: #fca120;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-page {
+    padding: 15px;
+    margin: 30px auto;
+  }
+
+  .about-page h1,
+  .about-page h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+  }
+
+  .about-page p {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-page {
+    padding: 10px;
+    margin: 20px auto;
+  }
+
+  .about-page h1,
+  .about-page h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .about-page p {
+    font-size: 12px;
+    line-height: 1.4;
+    margin-bottom: 10px;
+  }
+}
